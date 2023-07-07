@@ -1,0 +1,73 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+#header {
+    min-height: auto;
+    grid-column: 2/6;
+    grid-row: 1/2;
+    background: lightgoldenrodyellow;
+}
+
+#sidepanel {
+    grid-row-start: 1;
+    grid-row-end: 6;
+    background: hotpink;
+    min-width: 150px;
+}
+
+#main-content {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row: 2/6;
+    background: lightblue;
+
+    display: grid;
+    grid-template-columns: 4fr 1.5fr;
+}
+
+#main-content * {
+    border: 1px dotted;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 0.5fr repeat(6, 1fr);
+}
+
+#card-title {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+}
+
+#card-1 {
+    grid-column: 1/span 3;
+    grid-row: 2 / span 2;
+}
+
+#card-2 {
+    grid-column: 4 / span 3;
+    grid-row: 2/ span 2;
+}
+#card-3{
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 2;
+}
+#card-4{
+    grid-column: 4 / span 3;
+    grid-row: 4 / span 2;
+}
+#card-5{
+    grid-column: 1 / span 3;
+    grid-row: 6 / span 2;
+}
+#card-6{
+    grid-column: 4 / span 3;
+    grid-row: 6 / span 2;
+}
